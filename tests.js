@@ -129,13 +129,13 @@ describe("add", function() {
         expect(add("5",6)).toBe(11);
     })
     it('should return "NaN" when passed "banana" and "split"', function () {
-        expect(isNaN(add("banana","split"))).toBe(isNaN(parseFloat("banana")));
+        expect(isNaN(add("banana","split"))).toBe(true);
     })
     it('should return NaN when passed 2 and "apples"', function() {
-        expect(isNaN(add(2,"apples"))).toBe(isNaN("apples"))
+        expect(isNaN(add(2,"apples"))).toBe(true)
     })
     it('should return NaN when called with no inputs', function() {
-        expect(isNaN(add())).toBe(isNaN("banana"));
+        expect(isNaN(add())).toBe(true);
     })
 
 })
